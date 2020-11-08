@@ -1,0 +1,103 @@
+$primary: #6ACBEE;
+$primary-overlay: rgba(50, 146, 156, 0.3);
+
+body {
+    margin-top: 90px;
+}
+
+.navbar {
+    box-shadow: 2px 2px 5px $primary;
+    background: #fff;
+    opacity: 0.8;
+
+    .nav-item {
+        padding-right: 20px;
+
+
+
+
+        .nav-link {
+            color: #252525;
+        }
+
+        .nav-link:hover {
+            color: $primary;
+        }
+    }
+
+    .nav-item:last-child {
+        padding-right: 0;
+
+    }
+
+
+    h3 {
+        color: #252525;
+
+    }
+
+}
+
+#shortcut {
+    background: url('../img/back.jpg') no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+
+    .primary-overlay {
+        background-color: $primary-overlay;
+        min-height: 600px;
+        left: 0;
+        top: o;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+
+    }
+
+    .inner img {
+        padding-left: 10px;
+        padding-top: 45px;
+        height: 550px;
+        width: 100%;
+    }
+
+
+
+
+}
+
+#submit {
+    background-color: #1D1D1D;
+}
+
+#authors {
+    img {
+        margin-top: -50px;
+
+    }
+
+    .fa {
+        font-size: 22px;
+    }
+
+    .card:hover {
+        background: $primary;
+        color: #ffff;
+
+        .fa {
+            color: #fff;
+        }
+
+
+    }
+}
+
+@media(max-width :576px) {
+    #shortcut {
+        h3 {
+            font-size: 3rem;
+        }
+    }
+}
